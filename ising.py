@@ -63,7 +63,7 @@ class ising:
 #				self.C[i,j]-=self.m[i]*self.m[j]
 				
 	def inverse_exact(self,m1,C1,error,mode='gradient-descent'):	#Solve exact inverse ising problem with gradient descent
-		u=0.04
+		u=0.1
 		count=0
 		self.independent_model(m1)
 		
