@@ -17,7 +17,7 @@ C1=np.zeros((size,size))
 Pr=np.zeros(2**size)
 for t in range(T):
 	x.SequentialGlauberStep()
-	n=bool2int(x.s)
+	n=bool2int((x.s+1)*0.5)
 	Pr[n]+=1
 	for i in range(size):
 		m1[i]+=x.s[i]/float(T)
